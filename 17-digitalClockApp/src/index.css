@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url('./assets/bluesky.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* learning: make the picture fixed to the whole screen size */
+  
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 100px auto;
+  padding: 30px;
+  backdrop-filter: blur(40px);
+}

@@ -1,0 +1,21 @@
+.Toggledbutton {
+    transform: translateX(4px);
+    transition-duration: 1s;
+}
+
+.unToggledbutton {
+    transform: translateX(-4px);
+    transition-duration: 1s;
+}
+
+.TogglebuttonBox {
+    background-color: #0ea5e9;
+    transition-duration: 1s;
+}
+
+.unTogglebuttonBox {
+    background-color: #e2e8f0;
+    transition-duration: 1s;
+}
+
+

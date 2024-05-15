@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Jersey+20&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family:"Space Grotesk", sans-serif;
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+    /* font-family: "Nunito Sans", sans-serif; */
+    /* font-family: "ABeeZee", sans-serif; */
+    background:rgba(187, 237, 206, 0.736);
+    color: rgba(91, 93, 91, 0.936);
+}
+
+.default {
+    font-family:"Space Grotesk", sans-serif;
+    background:rgba(210, 179, 228, 0.254);
+    color: rgba(127, 216, 245, 0.936);
+}
+
+.girl {
+    font-family:"Space Grotesk", sans-serif;
+    background:rgba(210, 179, 228, 0.254);
+    color: rgba(127, 216, 245, 0.936);
+}
+
+.boy {
+    font-family:"Space Grotesk", sans-serif;
+    background:rgba(187, 237, 206, 0.736);
+    color: rgba(91, 93, 91, 0.936);
+}
+
+
+

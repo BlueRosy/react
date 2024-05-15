@@ -1,0 +1,11 @@
+.student {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:2em;
+  padding: 10px;
+  border: 1px solid pink;
+}
+
+.student p{
+  /* removing the margin between paragraph elements */
+  margin: 0;
+}
