@@ -1,4 +1,4 @@
-# Lesson 16: useEffect() = React Hoo that tells React Do some code when (pick one):
+# Lesson 16: useEffect() = React Hook that tells React Do some code when (pick one):
 1. The component re-renders
 2. this component mounts (create, and append it to the DOM)
 3. the state of a value changes
@@ -20,6 +20,6 @@ function could be a callback, anonymous code or arrow function
 In conclusion: 
 good point: use useEffect() can perform some codes only when some situations happen !! and have some options to do some cleanup code before 
 the next re-render or unmount the element
-sometimes, exercute the code when re-rendering is meaningless and unnecessary. so we need to control the execution happened only in some certain situations
-比如：我们想要添加一个eventListener 在DOM mounts的时候，不想add 几千个在re-renders 的时候，因为加一个就已经足够探测event happens的时候触发代码了。所以我们需要useEffect(()=>{eventListener}, [])
-另外：如果我们add an eventListener on certain element, 但是之后将这个element unmounted from the DOM，此时我们需要最佳的也要remove 这个eventListener, 不然可能造成unexpected behaviour
+sometimes, execute the code when re-rendering is meaningless and unnecessary. so we need to control the execution happened only in some certain situations
+for example, adding an eventListener just when DOM mounts，without adding thousands of eventListener when re-rendering ，because adding one is sufficient for triggering actions when the event happens。in such a case, use `useEffect(()=>{eventListener}, [])`
+Another example, add an eventListener on certain element, but later on when this element unmounted from the DOM，the best practice is to remove this eventListener (e.x inside the callback function. add `return () => {window.removeEventListener("resize", handleResize);}`), otherwise it might lead to unexpected behaviour!!

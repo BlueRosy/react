@@ -1,8 +1,9 @@
-# React + Vite
+# this is to illustrate how react work !!
+how react create a virtual DOM and render element in the DOM.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+three ways:
+1. function-based component (in which the function will return a html element)
 
-Currently, two official plugins are available:
+2. define const var = a html element. and render this var in the virtual DOM 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. the original object will be converted to a react object through react language (createElement), then render this element in the virtual DOM

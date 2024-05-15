@@ -11,4 +11,7 @@ namecard: a picture, a card Title, a description paragraph
 1. a card could be display: inline-block;
 2. to the best, a card width: 250px;
 
+#### Project Demo. Enjoy !! ☕️
+<img src="rose-namecardDemo.gif" width="400" >
+
 

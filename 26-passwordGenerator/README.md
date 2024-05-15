@@ -4,8 +4,7 @@ key points:
 2. different buttons will trigger a function to decide the optional char candidate inside the password
 3. copy button will trigger the textCopy function: onClick={copyText}, we will utilize the window.navigator.clipboard.writeText() function to copy the text into the clipboard. and use element.select() to select the text inside the inputbox
 4. useEffect, useCallback, useRef
-    notice that in this program, I just use the useEffect function, 不知道为何如果使用了useCallback + useEffect 之后好像更新password延迟了（应该是开始的password length 没有变化，所以没有callback 产生的缘故）
-    我的这个版本只用了normal function + useEffect
+    notice that in this program, I just use the useEffect function
 
 `difference`:
 
@@ -35,4 +34,6 @@ key points:
 next, we can also select the inputbox text whenever I click button by using useRef. this will not trigger not re-render the page. and thus will not trigger the password change or page reloaded
 
 
+#### Password Generator Demo: Enjoy ☕️ ~~
+<img src="passwordGeneratorDemo.gif" width="400">
 

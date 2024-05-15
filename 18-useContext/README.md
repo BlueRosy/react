@@ -1,4 +1,5 @@
-# Lesson 18: useContext = React Hook that allows you to share values between multiple levels of components without passing props through each level 关于复用！！提供者可以传给在他内部的tag element
+# Lesson 18: useContext = React Hook that allows you to share values between multiple levels of components without passing props through each level 
+good point: params sharing with props drilling
 
 if passing props down to each inserted component, called prop drilling !!
 very tedius.
@@ -7,9 +8,9 @@ we have a better method!! useContext hook
 ## Provider Component:
 1. import {createContent} from 'react';
 2. export const MyContext = createContent();
-3. <MyContext.Provider value={value}>
+3. `<MyContext.Provider value={value}>
         <Child />
-    </MyContext.Provider>
+    </MyContext.Provider>`
 
 
 ## COMSUMER COMPONENTS

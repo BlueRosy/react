@@ -8,7 +8,7 @@
 this function , we cannot use build-in array.push , it will directly update the array without return a new array, but our setFood(new food array), so to do this:
     const newfood = document.getElementById(`foodInput`).value;
     
-    setFoods(f => [...f, newfood])
+    `setFoods(f => [...f, newfood])`
 
 3. removefood item
 this function, we need a parameter item index. so
@@ -17,4 +17,4 @@ this function, we need a parameter item index. so
 with some conditions
 we can just filter the one we don't want with its index
 e.g.
-    setFoods(f => f.filter((_, i) => i != index))
+    `setFoods(f => f.filter((_, i) => i != index))`

@@ -8,3 +8,6 @@ inside one .js file, do three stuff.
 
 
 note: classList.remove("a", "b", "c") if you want to remove multiple values
+
+#### a good card project with theme switcher button. Enjoy ☕️ ~~
+<img src="themeSwitcherDemo.gif" width="200">

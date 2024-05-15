@@ -3,9 +3,7 @@ import StopWatchLearn from "./StopWatchLearn"
 function App(){
   return (
     <>
-    <StopWatch>
-  </StopWatch>
-  <StopWatchLearn></StopWatchLearn>
+      <StopWatchLearn></StopWatchLearn>
     </>
   
   )

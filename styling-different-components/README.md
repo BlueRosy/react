@@ -1,17 +1,22 @@
 # Class 3: how to style different React components with css
 (not including external frameworks or preprocessors)
 
-1. EXTERNAL (inside a .jsx file, import `.index/css`) 在主要的一个.css file中更新所有的styling
+1. EXTERNAL (inside a .jsx file, import `.index/css`) in the main index.css file update all styling for different components
   - good point: for global styling
   - bad point: could cause naming conflict
-2. MODULES (create a dedicated stylesheet specifically for each component 每一个react component为他特定一个单独的.css stylesheet)
-  - create a folder for the component, put component.jsx and component.module.css file in the folder
+
+2. MODULES (create a dedicated stylesheet specifically for each component)
+  - create a `folder` for the component, put `component.jsx` and `component.module.css` file in the folder
   - for the component, import the module 
-  syntax: import styles from './component.module.css'
-  - apply the style: {styles.class}
+  syntax: 
+  ```
+  import styles from './component.module.css'
+  ```
+  - apply the style: `{styles.class}`
 
   good points: don't have naming conflict, the unique class will be generated for you. className is unique and generated via a hash. And modules can give different components unique styles
   bad points: 1. require additional setup and global style aren't applied easily. have to import them from otherwhere
+
 3. INLINE (define a const styles variables for specific stylings.)
 
     .jsx convention: 
@@ -24,7 +29,7 @@
 
 
 Conclusion: 
-External: 将所有的styles放在一个folders src中，然后import 他们，但是这样做可能造成styling naming conflicts and 覆盖
-Module: 创建一个folder for component，然后放入具体的.jsx .module.css file, 最后可以import这个module，然后module.class 引用，好处是可以防止global naming overlap / confliction, 坏处是想要使用global styling就比较难了
-Internal：直接在.jsx function内部定义styles variable并且应用变量在具体的components上，同样可以防止global naming conflict但是只适用于微型styling sheet，若是有大量的css styling 的话不适合，造成代码的混乱，难以阅读
+External: put all styles in one folders src, then import this style.css in the index.html file，However, it might cause styling naming conflicts and overriding problems
+Module: create a folder for a component，and its unique .module.css stylesheet , finally import this stylesheet in the component.jsx file. good point: prevent global naming overlap / confliction, bad point: it is hard to apply the global styling
+Internal：directly define styles variable inside the component.jsx. This method can prevent global naming conflict but only suitable for small styling sheet，if there are lots of css styling . then it is unsuitable to use this method !!! 
 

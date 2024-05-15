@@ -40,7 +40,7 @@ First thing to do is create a Browser Router and configure our first route. This
 The main.jsx file is the entry point. Open it up and we'll put React Router on the page.
 Create and render a browser router in main.jsx
 
-逻辑：创建一个router object -> router object has a root path and inside the root path, correlate the child path with components. finally, insert a router into the reactDOM rather than the component itself
+Logic: create a router object -> router object has a root path and inside the root path, correlate the child path with components. finally, insert a router into the reactDOM rather than the component itself
 
 `router creation method1: create an router object`
 
@@ -182,3 +182,6 @@ import {faFacebook, faDiscord, faTwitter, faGithub, faDribbble} from '@fortaweso
 
 ```
 
+
+#### Personal Website Demo: Enjoy ☕️ ~~
+<img src="personalWebsiteDemo.gif" width="600">

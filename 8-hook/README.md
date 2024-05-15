@@ -1,10 +1,17 @@
 # Lesson 8: react Hook
-react hook = special function that allows functional components to use React features without writing class components (React v16.8) (如果function name starts with a use, 非常可能是react hook: useState, useEffect, useContext, useReducer, useCallback, and more)
+react hook = special function that allows functional components to use React features without writing class components (React v16.8) (if a function name starts with a use, it is likely to be a react hook: useState, useEffect, useContext, useReducer, useCallback, and more)
 
-useState() = A react hook that allows the creation of a stateful variable AND a setter function to update its value in the Virtual DOM 若是一个状态性的变量，变量值会被储存在虚拟DOM树中 [name, setName]
-修改a stateful variable 只能通过setName function 了. 有了它，就可以对一个变量进行修改同时他们保存修改后的值了
+#### useState() = A react hook that allows the creation of a stateful variable AND a setter function to update its value in the Virtual DOM
+```
+ import React, {useState} from 'react'
+ const [name, setName] = useState();
+```
+
+if you want to update a stateful variable, you can only use setName() function . with this function, you can `update and save the new value in state. and rerendering the page whenever the state updated.`
 
 that means we no longer need to write a class component, we just need to use functional based components that use hooks to use react fetures
 
 
-final work: counter program
+#### Counter Program Demo: Enjoy ☕️
+<img src="counterdemo.gif" width="400">
+

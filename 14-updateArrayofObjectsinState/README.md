@@ -8,6 +8,7 @@ const [cars, setCars] = useState([]);
 
 3. define function to add a new object with updated properties into the array
 use setter function to add this new object into the array. reset the object properties
+```
 function handleAddCar() {
         const newCar = {
                   year: carYear,
@@ -24,5 +25,6 @@ function handleAddCar() {
         
     }
 
+```
 
 4. optional: you can remove the objects by their indexes. through.filter function. the handleremove function needs to be passed by one parameter: array index

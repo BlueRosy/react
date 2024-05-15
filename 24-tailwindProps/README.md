@@ -1,7 +1,7 @@
 # tailwind css + Props
 
 ## 1. tailwind css
-Setting up tailwind css: tailwind css is a css framework which allows you to customize css styling sheet in a more convenient way. (A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. 在html中就能建立出非常美观的css)
+Setting up tailwind css: tailwind css is a css framework which allows you to customize css styling sheet in a more convenient way. (A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. )
 
 https://tailwindcss.com/docs/guides/vite
 

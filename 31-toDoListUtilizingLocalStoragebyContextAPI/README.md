@@ -25,7 +25,9 @@ through useEffect(callback, [])
     localStorage.setItem("todos", JSON.stringify(todos))
   }, [todos])
 
-    ```
+  ```
+
+
 
 
 ### for className do the conditional rendering and adding some function
@@ -35,7 +37,7 @@ className={`some css ${functions that return some css strings}`}
 
 way2: className={'some css ' + (some functions that return css strings)}
 
-### inside the return html, {all of them are .js code}
+note: inside the return html, `{all of them are .js code}`
 
 
 ### for checkbox to update the completed attribute based on checked attribute: true or false
@@ -51,3 +53,7 @@ disabled={some true/false condition or functions}
 ### if you want to define a context, put all createContext, contextProvider, and useContext together in one file. and define a index.js to put all different context file together. so you can later on import all those things based in one index.js file in the context folder
 
 similarly, if you want to use different components.jsx, simply write diffent .jsx file in the components folder and aggeragate them in the one index.js file by import and export all of them
+
+
+#### TodoList demo with theme Switcher and Context API to store data temporily, Enjoy the show ☕️～～
+<img src="todolistDemo.gif" width="300">
